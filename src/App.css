@@ -1,0 +1,100 @@
+:root {
+    --text-color: #323232;
+    --body-background-color: #f7f7f7;
+    --display-and-buttons-background-color: #bebfc2;
+    --drum-machine-color: #ebebed;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    user-select: none;
+    font-family: Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: left;
+    background-color: var(--body-background-color);
+    color: var(--text-color);
+}
+
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#drum-machine {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--drum-machine-color);
+    width: 675px;
+    height: 300px;
+    border: 2px solid black;
+}
+
+#controlsAndDisplayWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#controlsAndDisplayWrapper #display {
+    background-color: var(--display-and-buttons-background-color);
+    width: 200px;
+    margin: 15px auto;
+    padding: 15px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#controlsAndDisplayWrapper #controls {
+    width: 240px;
+    text-align: center;
+}
+
+#controlsAndDisplayWrapper #controls #volumeMixerWrapper {
+    margin-top: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#controlsAndDisplayWrapper #controls #volumeMixerWrapper #volumeLabel {
+    margin-right: 5px;
+}
+
+#controlsAndDisplayWrapper #controls #onOffWrapper {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#controlsAndDisplayWrapper #controls #onOffWrapper #onOffLabel {
+    margin-right: 10px;
+}
+
+#drumPadWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+#drumPadWrapper .drum-pad {
+    background-color: var(--display-and-buttons-background-color);
+    width: 100px;
+    height: 80px;
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
