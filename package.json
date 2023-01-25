@@ -2,6 +2,7 @@
   "name": "drum-machine",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://evanahdout.github.io/drum-machine/",
   "main": "index.js",
   "author": "Evan Ahdout",
   "license": "ISC",
