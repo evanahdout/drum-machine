@@ -1,8 +1,8 @@
 :root {
     --text-color: #323232;
     --body-background-color: #f7f7f7;
-    --display-and-buttons-background-color: #bebfc2;
     --drum-machine-color: #ebebed;
+    --display-and-buttons-background-color: #bebfc2;
 }
 
 * {
